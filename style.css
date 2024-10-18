@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, Helvetica;
+}
+
+
+.navbar,
+.top,
+.top-links,
+.bottom,
+.bottom-left {
+    display: flex;
+}
+
+.navbar {
+    flex-direction: column;
+    /* background-color: #1F2937; */
+}
+
+.top {
+    justify-content: space-between;
+}
+
+.top-links {
+    flex-direction: row;
+    gap: 10px;
+}
+
+.bottom-left {
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: brown;
+}
+
+a:hover {
+    color: bisque;
+}
