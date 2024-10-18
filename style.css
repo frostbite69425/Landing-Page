@@ -6,6 +6,10 @@
 
 body {
     font-family: 'Roboto', Arial, Helvetica;
+    /* display: flex;
+    justify-content: center;
+    flex: 1; */
+    padding: 100px 500px;
 }
 
 
@@ -19,8 +23,15 @@ body {
 
 .navbar {
     flex-direction: column;
-    /* background-color: #1F2937; */
+    background-color: #1F2937;
 }
+
+.logo {
+    color: #F9FAF8;
+    font-size: 24px;
+}
+
+
 
 .top {
     justify-content: space-between;
@@ -37,7 +48,8 @@ body {
 
 a {
     text-decoration: none;
-    color: brown;
+    color: #E5E7EB;
+    font-size: 18px;
 }
 
 a:hover {
