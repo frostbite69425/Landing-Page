@@ -109,11 +109,27 @@ button {
     font-weight: bold;
     font-size: 16px;
     border: #3882F6;
-    border-radius: 15px;
+    border-radius: 10px;
     width: fit-content;
     padding: 10px 30px;
 }
 
 button:hover {
     color: cyan;
+}
+
+.boxes,
+.heading,
+.box-group,
+.borders {
+    display: flex;
+}
+
+.boxes {
+    flex-direction: column;
+}
+
+.blue-box {
+    border: #3882F6;
+    
 }
