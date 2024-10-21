@@ -10,6 +10,7 @@ body {
     justify-content: center;
     flex: 1; */
     /* padding: 100px 500px; */
+    /* padding: 10px 250px; */
     
 }
 
@@ -127,9 +128,37 @@ button:hover {
 
 .boxes {
     flex-direction: column;
+    padding: 10px 250px;
 }
 
 .blue-box {
-    border: #3882F6;
-    
+    border: 7px solid #3882F6;
+    padding: 70px;
+    border-radius: 10px;  
+}
+
+.heading {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.borders {
+    flex-direction: column;
+    flex-grow: 0;
+    gap: 10px;
+}
+
+.box-group {
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.subtext {
+    width: 70px;
+    display: flex;
+    flex-wrap: wrap;
 }
