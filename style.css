@@ -54,6 +54,7 @@ body {
     align-items: center;
     height: 50px;
     flex-wrap: wrap;
+    flex: 1;
 }
 
 .top-links {
@@ -66,12 +67,14 @@ body {
 
 .bottom-left {
     flex-direction: column;
+    flex: 1;
 }
 
 a {
     text-decoration: none;
     color: #E5E7EB;
     font-size: 18px;
+    width: fit-content;
 }
 
 a:hover {
@@ -81,6 +84,7 @@ a:hover {
 .bottom {
     gap: 50px;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .hero-text {
@@ -97,10 +101,17 @@ a:hover {
     margin-bottom: 10px;
 }
 
+.bottom-right {
+    flex-shrink: 1;
+}
+
 img {
-    /* min-width: 100px; */
-    width: 100%;
-    min-width: 500px;
+    /* min-width: 100%; */
+    width: 500px;
+    /* min-width: 50%;
+    min-height: 50%; */
+    max-width: 100%;
+    height: auto;
 }
 
 button {
@@ -131,11 +142,6 @@ button:hover {
     padding: 10px 250px;
 }
 
-.blue-box {
-    border: 7px solid #3882F6;
-    padding: 70px;
-    border-radius: 10px;  
-}
 
 .heading {
     font-size: 36px;
@@ -144,21 +150,33 @@ button:hover {
     display: flex;
     justify-content: center;
     padding: 50px;
+    flex: 1;
 }
 
 .borders {
     flex-direction: column;
     flex-grow: 0;
     gap: 10px;
+    align-items: center;
 }
 
 .box-group {
     gap: 40px;
     justify-content: space-between;
+    /* flex-wrap: wrap;
+    align-content: center;
+    flex: 1; */
 }
 
-.subtext {
-    width: 70px;
+.box-group .subtext {
+    /* width: 150px; */
     display: flex;
-    flex-wrap: wrap;
+    text-align: center;
+}
+
+.blue-box {
+    border: 5px solid #3882F6;
+    padding: 70px;
+    border-radius: 12px;
+    /* width: 100px; */
 }
