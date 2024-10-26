@@ -26,8 +26,16 @@ body {
 
 /* SET THE PADDING OF THE MACRO SECTIONS USING THIS CHAIN SELECTOR */
 
-.navbar {
+.navbar,
+.action,
+.credits {
     padding: 10px 250px;
+    padding-bottom: 100px;
+}
+
+.boxes,
+.quote {
+    padding: 10px 350px;
     padding-bottom: 100px;
 }
 
@@ -50,7 +58,7 @@ body {
 
 .top {
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     align-items: center;
     height: 50px;
     flex-wrap: wrap;
@@ -60,7 +68,7 @@ body {
 .top-links {
     flex-direction: row;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     font-size: 18px;
     color: #E5E7EB;
 }
@@ -107,7 +115,7 @@ a:hover {
 
 img {
     /* min-width: 100%; */
-    width: 500px;
+    width: 250px;
     /* min-width: 50%;
     min-height: 50%; */
     max-width: 100%;
@@ -139,7 +147,7 @@ button:hover {
 
 .boxes {
     flex-direction: column;
-    padding: 10px 250px;
+    /* padding: 10px 250px; */
 }
 
 
@@ -161,17 +169,18 @@ button:hover {
 }
 
 .box-group {
-    gap: 40px;
-    justify-content: space-between;
-    /* flex-wrap: wrap;
-    align-content: center;
-    flex: 1; */
+    gap: 5px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* align-content: flex-end; */
+    /* flex: 1; */
 }
 
 .box-group .subtext {
     /* width: 150px; */
     display: flex;
     text-align: center;
+    width: 200px;
 }
 
 .blue-box {
@@ -179,4 +188,79 @@ button:hover {
     padding: 70px;
     border-radius: 12px;
     /* width: 100px; */
+}
+
+.quote {
+    background-color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 350px;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.italics {
+   font-size: 36px;
+   font-style: italic;
+   font-weight: lighter;
+   color: #1F2937;
+   text-align: center;
+}
+
+.thor {
+    font-size: 18px;
+    font-weight: 700;
+    align-self: flex-end;
+}
+
+.action {
+    padding: 100px 250px;
+}
+
+.macro-container {
+    display: flex;
+    background-color: #3882F6;
+    padding: 50px 100px;
+    border-radius: 15px;
+    justify-content: space-between;
+}
+
+
+
+.text {
+    color: #F9FAF8;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.bold-text {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.normal-text {
+    font-weight: 100;
+    font-size: 14px;
+}
+
+button.bottom-button {
+    background-color: #3882F6;
+    color: white;
+    border: 2px solid white;
+    width: fit-content;
+}
+
+.credits {
+    background-color: #1F2937;
+    display: flex;
+    justify-content: center;
+    padding: 50px 250px;
+} 
+
+.TheOP {
+    color: #E5E7EB;
+    font-weight: 100;
+    font-size: 18px;
 }
